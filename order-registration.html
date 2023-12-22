@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="order-reg">
+            <div class="order-reg__wrap">
+                <div class="order-reg__top_mobile">
+                    <div class="order-reg__back__mobile">
+                        <a href="">
+                            <img src="img/back2.svg" alt=""> Корзина
+                        </a>
+                    </div>
+                    <div class="order-reg__title__mobile">
+                        <h2>Оформление заказа</h2>
+                    </div>
+                    <div class="order-reg__content__mobile">
+                        <div class="order-reg__more-btn__mobile">
+                            <a href="">
+                                <img src="img/bag.svg" alt=""> <div class="text">Показать корзину</div> <img id="arrowiconorder" src="img/dropdown_arrow2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="order-reg__summary-price_mobile">
+                            59,90 зл.
+                        </div>
+                    </div>
+                </div>
+                <div class="order-reg__left">
+                    <div class="order-reg__back-btn">
+                        <a href="">Вернуться в корину</a>
+                    </div>
+                    <div class="order-reg__title">
+                        <h2>
+                            Оформление заказа
+                        </h2>
+                    </div>
+                    <div class="order-reg__text">
+                       <a href="">Войдите</a>, если у вас уже есть аккаунт
+                    </div>
+                    <div class="order-reg__form-wrap">
+                        <form action="">
+                            <div class="order-reg__form__item">
+                                <div class="order-reg__item__title">
+                                    Контактная информация
+                                </div>
+                                <div class="form__item__input">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" name="email" placeholder="E-mail*" required>
+                                </div>
+                                <div class="form__item__input">
+                                    <label for="phone">Телефон*</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Телефон*" required>
+                                </div>
+                                <div class="form__item__wrap">
+                                    <div class="form__item__input">
+                                        <label for="name">Имя*</label>
+                                        <input type="text" id="name" name="name" placeholder="Имя*" required>
+                                    </div>
+                                    <div class="form__item__input">
+                                        <label for="surname">Фамилия*</label>
+                                        <input type="text" id="surname" name="surname" placeholder="Фамилия*" required>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="order-reg__form__item">
+                                <div class="order-reg__item__title">
+                                    Адрес доставки
+                                </div>
+                                <div class="form__item__input">
+                                    <label for="country">Страна*</label>
+                                    <input type="text" id="country" name="country" placeholder="Страна*" required>
+                                </div>    
+                                                      
+                                <div class="form__item__wrap">
+                                    <div class="form__item__input">
+                                        <label for="сity">Город*</label>
+                                        <input type="text" id="сity" name="сity" placeholder="Город*" required>
+                                    </div>
+                                    <div class="form__item__input">
+                                        <label for="region">Регион*</label>
+                                        <input type="text" id="region" name="region" placeholder="Регион*" required>
+                                    </div>
+                                    <div class="form__item__input">
+                                        <label for="postalcode">Почтовый индекс*</label>
+                                        <input type="text" id="postalcode" name="postalcode" placeholder="Почтовый индекс*" required>
+                                    </div>
+                                </div>  
+                                <div class="form__item__input">
+                                    <label for="address">Адрес (улица, номер дома и квартиры)*</label>
+                                    <input type="text" id="address" name="address" placeholder="Адрес (улица, номер дома и квартиры)*" required>
+                                </div>    
+                                <div class="form__item__input">
+                                    <label for="message">Комментарий к заказу</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Комментарий к заказу"></textarea>
+                                </div>                          
+                            </div>
+                            <div class="form__item__btn">
+                                <button type="submit">Оформить заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="order-reg__right" id="hiddenblockorder">
+                    <div class="order-reg__right__wrap">
+                        <div class="order-reg__product-list">
+                            <div class="order-reg__product__item">
+                                <div class="order-reg__product__img">
+                                    <img src="img/order-product.png" alt="">
+                                </div>
+                                <div class="order-reg__product__content">
+                                    <div class="order__product__top">
+                                        <div class="order__product__header">
+                                            <div class="order__product__name">
+                                                I-Beauty Eyelashes Curl CC
+                                            </div>
+                                            <div class="order__product__delete-btn">
+                                                <a href="">
+                                                    <img src="img/order-delete.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="order__product__characteristic">
+                                            Толщина: <span>0,05 мм</span>
+                                        </div>
+                                        <div class="order__product__characteristic">
+                                            Длина: <span>5 мм</span>
+                                        </div>
+                                    </div>
+                                    <div class="order__product__price">
+                                        59,90 зл.
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-reg__summary-price">
+                            <div class="order-reg__summary-price__wrap">
+                                <div class="order-reg__summary-price__text">
+                                    Подытог:
+                                </div>
+                                <div class="order-reg__summary-price__price">
+                                    59,90 зл.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

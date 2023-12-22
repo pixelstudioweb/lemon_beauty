@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="index.html" class="header__logo__link__desktop">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <a href="index.html" class="header__logo__link__mobile">
+                        <img src="img/logo__mobile.svg" alt="">
+                    </a>
+                    <div class="header__nav-bar">
+                        <ul class="heaer__nav-bar__list">
+                            <li class="header__nav-bar__item">
+                                <a href="catalog.html" class="header__nav-bar__link">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="header__nav-bar__item">
+                                <a href="about.html" class="header__nav-bar__link">
+                                    О&nbsp;нас
+                                </a>
+                            </li>
+                            <li class="header__nav-bar__item">
+                                <a href="delivery.html" class="header__nav-bar__link">
+                                    Оплата и&nbsp;доставка
+                                </a>
+                            </li>
+                            <li class="header__nav-bar__item">
+                                <a href="contacts.html" class="header__nav-bar__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__utilities">
+                        <ul class="header__utilities__list">
+                            <li>
+                                <div class="dropdown">
+                                    <div class="dropbtn">RU</div>
+                                    <div class="dropdown-content">
+                                        <a href="#" class="language-link active">RU</a>
+                                        <a href="#" class="language-link">EN</a>
+                                        <a href="#" class="language-link">PL</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__utilities__item">
+                                <button class="header__utilities__btn" id="searchBtn">
+                                    <img src="img/heaader1.svg" alt="">
+                                </button>
+                            </li>
+                            <li class="header__utilities__item">
+                                <a href="account.html" class="header__utilities__link">
+                                    <img src="img/header2.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__utilities__item">
+                                <a href="basket.html" class="header__utilities__link">
+                                    <img src="img/header3.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__utilities__item">
+                                <a href="favourites.html" class="header__utilities__btn">
+                                    <img src="img/header4.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="search__wrap" id="searchblock">
+                    <div class="search__input__wrap">
+                        <label for="searchbar"><img src="img/search2.svg" alt=""></label>
+                        <input id="searchbar" type="text" name="search" placeholder="Поиск товара"> 
+                    </div>                    
+                    <ul class="search__wrap__list">
+                        <li class="search__wrap__item">
+                            <a href="" class="search__wrap__link">
+                                Клей для ресниц Lovely
+                            </a>
+                        </li>
+                        <li class="search__wrap__item">
+                            <a href=""  class="search__wrap__link">
+                                Клей для ресниц I-beauty
+                            </a>
+                        </li>
+                        <li class="search__wrap__item">
+                            <a href="" class="search__wrap__link">
+                                Клей для ресниц I-beauty
+                            </a>
+                        </li>
+                        <li class="search__wrap__item">
+                            <a href=""  class="search__wrap__link">
+                                Клей для ресниц I-beauty
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="first-section">
+            <div class="container">
+                <div class="first-section__wrap">
+                    <div class="first-section__back">
+                        <a class="back" href="">
+                            <img src="img/back.svg" alt="">
+                        </a>
+                        Каталог
+                    </div>
+                    <div class="first-section__title">
+                        <h1>Каталог</h1>
+                    </div>
+                    <div class="first-section__text">
+                        Объединяем лучшие бренды материалов для наращивания ресниц для вас
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__filter">
+                    <div class="catalog__filter__item catalog__filter-category">
+                        <div class="catalog__dropdown">
+                            <div class="catalog__dropbtn">
+                                Категория
+                            </div>
+                            <div class="catalog__dropdown-content">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="category1" name="category1"
+                                            value="yes">
+                                        <label for="category1">накладные ресницы</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="category2" name="category2"
+                                            value="yes">
+                                        <label for="category2">клей для ресниц</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="category3" name="category3"
+                                            value="yes">
+                                        <label for="category3">лифтинг и ламинирование</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="category4" name="category4"
+                                            value="yes">
+                                        <label for="category4">очистители и смывки</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="category5" name="category5"
+                                            value="yes">
+                                        <label for="category5">аксессуары</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__item catalog__filter-color">
+                        <div class="catalog__dropdown">
+                            <div class="catalog__dropbtn">
+                                Цвет
+                            </div>
+                            <div class="catalog__dropdown-content">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="color1" name="color1"
+                                            value="yes">
+                                        <label for="color1">накладные ресницы</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="color2" name="color2"
+                                            value="yes">
+                                        <label for="color2">клей для ресниц</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="color3" name="color3"
+                                            value="yes">
+                                        <label for="color3">лифтинг и ламинирование</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="color4" name="color4"
+                                            value="yes">
+                                        <label for="color4">очистители и смывки</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="color5" name="color5"
+                                            value="yes">
+                                        <label for="color5">аксессуары</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__item catalog__filter-brend">
+                        <div class="catalog__dropdown">
+                            <div class="catalog__dropbtn">
+                                Бренд
+                            </div>
+                            <div class="catalog__dropdown-content">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="brend1" name="brend1"
+                                            value="yes">
+                                        <label for="brend1">накладные ресницы</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="brend2" name="brend2"
+                                            value="yes">
+                                        <label for="brend2">клей для ресниц</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="brend3" name="brend3"
+                                            value="yes">
+                                        <label for="brend3">лифтинг и ламинирование</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="brend4" name="brend4"
+                                            value="yes">
+                                        <label for="brend4">очистители и смывки</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class="catalog__checkbox" id="brend5" name="brend5"
+                                            value="yes">
+                                        <label for="brend5">аксессуары</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__item catalog__filter-price">
+                        <div class="catalog__dropdown">
+                            <div class="catalog__dropbtn">
+                                Цена
+                            </div>
+                            <div class="catalog__dropdown-content">
+                                <div class="slider-price__wrapper">
+                                    <div class="slider-price">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="slider__range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500"
+                                            step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500"
+                                            step="100">
+                                    </div>
+                                    <div class="slider__price-input">
+                                        <div>
+                                            Цена:
+                                        </div>
+                                        <div class="input-min-text">
+                                            2500
+                                        </div>
+                                        <div class="separator">- </div>
+                                        <div class="input-max-text">
+                                            7500
+                                        </div>
+                                        <div>
+                                            zt
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__item catalog__filter-sort">
+                        Сортировать по:
+                        <div class="catalog__dropdown">
+                            <div class="catalog__dropbtn">
+                                популярности
+                            </div>
+                            <div class="catalog__dropdown-content">
+                                <ul>
+                                    <li>
+                                        <input type="radio" class="catalog__radio" id="sort1" name="sort" value="yes">
+                                        <label for="sort1">накладные ресницы</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="catalog__radio" id="sort2" name="sort" value="yes">
+                                        <label for="sort2">клей для ресниц</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="catalog__radio" id="sort3" name="sort" value="yes">
+                                        <label for="sort3">лифтинг и ламинирование</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="catalog__radio" id="sort4" name="sort" value="yes">
+                                        <label for="sort4">очистители и смывки</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="catalog__radio" id="sort5" name="sort" value="yes">
+                                        <label for="sort5">аксессуары</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__item_mobile catalog__filter-sort_mobile">
+                        <button class="catalog__btn__sort">
+                            Популярные <img src="img/dropdown_arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="catalog__filter__item_mobile catalog__filter-all_mobile">
+                        <abutton class="catalog__btn__filter">
+                            <img src="img/all_filter.svg" alt="">
+                            </button>
+                    </div>
+                </div>
+                <div class="catalog__main">
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                        <path
+                                            d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                            fill="white" />
+                                    </g>
+                                    <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                        <path
+                                            d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_416_510">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    <defs>
+                                        <clipPath id="clip0_967_1941">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                        <path
+                                            d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                            fill="white" />
+                                    </g>
+                                    <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                        <path
+                                            d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_416_510">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    <defs>
+                                        <clipPath id="clip0_967_1941">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                    <path
+                                        d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                        fill="white" />
+                                </g>
+                                <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                    <path
+                                        d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_416_510">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                                <defs>
+                                    <clipPath id="clip0_967_1941">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                        <path
+                                            d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                            fill="white" />
+                                    </g>
+                                    <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                        <path
+                                            d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_416_510">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    <defs>
+                                        <clipPath id="clip0_967_1941">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                        <path
+                                            d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                            fill="white" />
+                                    </g>
+                                    <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                        <path
+                                            d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_416_510">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    <defs>
+                                        <clipPath id="clip0_967_1941">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                    <path
+                                        d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                        fill="white" />
+                                </g>
+                                <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                    <path
+                                        d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_416_510">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                                <defs>
+                                    <clipPath id="clip0_967_1941">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                    <path
+                                        d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                        fill="white" />
+                                </g>
+                                <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                    <path
+                                        d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_416_510">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                                <defs>
+                                    <clipPath id="clip0_967_1941">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                    <path
+                                        d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                        fill="white" />
+                                </g>
+                                <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                    <path
+                                        d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_416_510">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                                <defs>
+                                    <clipPath id="clip0_967_1941">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                        <path
+                                            d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                            fill="white" />
+                                    </g>
+                                    <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                        <path
+                                            d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_416_510">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    <defs>
+                                        <clipPath id="clip0_967_1941">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__img">
+                            <button class="item__like__btn like_active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_967_1941)" class="svg_like_active">
+                                        <path
+                                            d="M21.7981 3.20641C20.9595 2.46637 19.7973 1.89062 18.3203 1.89062C16.3737 1.89062 13.9747 2.88997 11.9861 5.83089C9.99799 2.89048 7.62928 1.89062 5.68315 1.89062C4.20561 1.89062 3.01317 2.46637 2.17457 3.20641C0.3624 4.73197 -0.299282 6.92932 0.122799 9.47293C0.749603 13.2535 7.32851 17.1073 11.9861 22.1101C16.6436 17.1073 23.2539 13.2535 23.8807 9.47293C24.3022 6.92932 23.6097 4.73197 21.7981 3.20641Z"
+                                            fill="white" />
+                                    </g>
+                                    <g clip-path="url(#clip0_416_510)" class="svg_like_active2">
+                                        <path
+                                            d="M21.7981 3.20632C20.9595 2.46628 19.7974 1.89053 18.3204 1.89053C16.3738 1.89053 13.9747 2.88988 11.9861 5.8308C9.99805 2.89039 7.62934 1.89053 5.68321 1.89053C4.20568 1.89053 3.01323 2.46628 2.17463 3.20632C0.362461 4.73187 -0.299221 6.92922 0.12286 9.47283C0.749664 13.2534 7.32857 17.1072 11.9861 22.11C16.6437 17.1072 23.2539 13.2534 23.8807 9.47283C24.3023 6.92922 23.6098 4.73187 21.7981 3.20632ZM22.8698 9.47283C22.5286 11.5312 19.7731 13.7568 16.7625 16.3318C15.1575 17.7042 13.5056 19.1165 11.9861 20.6537C10.4666 19.1165 8.8147 17.7037 7.20978 16.3313C4.1991 13.7568 1.47504 11.5307 1.13383 9.47283C0.775443 7.31188 1.28093 5.2783 2.83884 3.96606C3.59404 3.29932 4.59642 2.90151 5.68321 2.90151C7.05561 2.90151 9.19938 3.5086 11.1536 6.39897L11.9861 7.63033L12.8187 6.39897C14.7734 3.50809 16.948 2.90151 18.3204 2.90151C19.4072 2.90151 20.3782 3.29932 21.1516 3.98123C22.6918 5.2783 23.2276 7.31188 22.8698 9.47283Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_416_510">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                    <defs>
+                                        <clipPath id="clip0_967_1941">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                            <img class="img" src="img/catalog_item.png" alt="">
+                        </div>
+                        <div class="catalog__item__name">
+                            Название товара
+                        </div>
+                        <div class="catalog__item__price">
+                            цена
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__top">
+                        <div class="footer__top__item">
+                            <a href="#">
+                                <img class="desktop" src="img/footer__logo.svg" alt="">
+                                <img class="mobile" src="img/footer__logo_mobile.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__top__item">
+                            <ul class="footer__top__list">
+                                <li>
+                                    Каталог
+                                </li>
+                                <li>
+                                    <a href="#">Искусственные ресницы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Искусственные ресницы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ламинирование</a>
+                                </li>
+                                <li>
+                                    <a href="#">Праймер/обезжириватель/ремувер</a>
+                                </li>
+                                <li>
+                                    <a href="#">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__top__item">
+                            <ul class="footer__top__list">
+                                <li>
+                                    Информация
+                                </li>
+                                <li>
+                                    <a href="#">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата и&nbsp;доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__top__item">
+                            <ul class="footer__top__list">
+                                <li>
+                                    Каталог
+                                </li>
+                                <li>
+                                    <a href="#">+48 574 230 959</a>
+                                </li>
+                                <li>
+                                    <a href="#">kontakt@lemonbeauty.pl</a>
+                                </li>
+                                <li>
+                                    <a href="#">90-418, Лодзь Ал. Тадеуша Костюшко 3/14</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__bottom__item">
+                            2023 ©Lemon Beauty Shop
+                        </div>
+                        <div class="footer__bottom__item">
+                            <a href="#">
+                                Политика конфиденциальности
+                            </a>
+                        </div>
+                        <div class="footer__bottom__item">
+                            <a href="#">
+                                Публичная оферта
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="sort__mobile_bottom">
+            <div class="sort__mobile__wrap">
+                <ul>
+                    <li>
+                        <input type="radio" class="catalog__radio" id="mobilesort1" name="sort2" value="yes">
+                        <label for="mobilesort1">Популярные</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="catalog__radio" id="mobilesort2" name="sort2" value="yes">
+                        <label for="mobilesort2">Новинки</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="catalog__radio" id="mobilesort3" name="sort2" value="yes">
+                        <label for="mobilesort3">Сначала дешевые</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="catalog__radio" id="mobilesort4" name="sort2" value="yes">
+                        <label for="mobilesort4">Сначала дорогие</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="catalog__radio" id="mobilesort5" name="sort2" value="yes">
+                        <label for="mobilesort5">По рейтингу</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter__all">
+            <div class="filter__all__wrap">
+                <div class="filter__all__header">
+                    <div class="filter__all__title">
+                        Фильтры
+                    </div>
+                    <div class="filter__all__close">
+                        <button class="popup-filter__btn__closse">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="filter__all__main">
+                    <div class="filter__all__item">
+                        <div class="filter__all__name">
+                            Цвет
+                        </div>
+                        <div class="filter__all__list">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" class="catalog__checkbox_mobile" id="colormobile1"
+                                        name="brend1" value="yes">
+                                    <label for="colormobile1">черный</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="catalog__checkbox_mobile" id="colormobile2"
+                                        name="brend2" value="yes">
+                                    <label for="colormobile2">коричневый</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="catalog__checkbox_mobile" id="colormobile3"
+                                        name="brend3" value="yes">
+                                    <label for="colormobile3">разноцветный</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter__all__item">
+                        <div class="filter__all__name">
+                            Бренд
+                        </div>
+                        <div class="filter__all__list">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" class="catalog__checkbox_mobile" id="brendmobile1"
+                                        name="brend1" value="yes">
+                                    <label for="brendmobile1">Lovely</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="catalog__checkbox_mobile" id="brendmobile2"
+                                        name="brend2" value="yes">
+                                    <label for="brendmobile2">I-beauty</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="catalog__checkbox_mobile" id="brendmobile3"
+                                        name="brend3" value="yes">
+                                    <label for="brendmobile3">Lashy</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter__all__item">
+                        <div class="filter__all__name">
+                            Цена
+                        </div>
+                        <div class="filter__all__list">
+                            <div class="slider-price__wrapper_mobile">
+                                <div class="slider-price">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="slider__range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                </div>
+                                <div class="slider__price-input">
+                                    <div>
+                                        Цена:
+                                    </div>
+                                    <div class="input-min-text">
+                                        2500
+                                    </div>
+                                    <div class="separator">- </div>
+                                    <div class="input-max-text">
+                                        7500
+                                    </div>
+                                    <div>
+                                        zt
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__all__bottom">
+                    <button class="filter__all__btn-apply">
+                        Применить
+                    </button>
+                    <button class="filter__all__btn-clear">
+                        Сбросить фильтры
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/sliderprice.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
